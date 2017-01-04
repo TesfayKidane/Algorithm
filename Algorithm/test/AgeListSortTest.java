@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import algorith.sort.sortagelist.AgeListSort;
+import algorithm.sort.sortagelist.AgeListSort;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

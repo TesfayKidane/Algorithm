@@ -14,7 +14,7 @@ We now have a pretty different problem: sort an array containing a million integ
 between O and 130 (a reasonable maximum age). How do we solve this? Just create an
 array with 130 elements and count the number of ages at each value.
 * */
-package algorith.sort.sortagelist;
+package algorithm.sort.sortagelist;
 
 import java.util.ArrayList;
 import java.util.Arrays;

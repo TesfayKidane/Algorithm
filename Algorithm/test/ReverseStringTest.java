@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import algorithm.reversstring.ReverseString;
+import algorithm.reverse.reversstring.ReverseString;
 import org.junit.Test;
 import static org.junit.Assert.*;
 

@@ -3,7 +3,7 @@
  */
 package algorithm.reverse.reversstring;
 
-import java.util.Random;
+import myutils.RandomString;
 
 /**
  *
@@ -49,8 +49,7 @@ public class ReverseString {
     }
     
     public static void main(String[] args){
-    
-       final String textToBeReversed = randomString(1000000, "AaBbCcDdEeFfGgHhIiJjKkLlMmNnO oPpQqRrSsTtUuVvWwXxYyZz");
+       final String textToBeReversed = RandomString.randomString(1000000, "AaBbCcDdEeFfGgHhIiJjKkLlMmNnO oPpQqRrSsTtUuVvWwXxYyZz");
        long start = System.currentTimeMillis();
        reverse(textToBeReversed);
        System.out.println("Tesfay's Reverse Algo : " + (System.currentTimeMillis() - start)); 
@@ -62,17 +61,5 @@ public class ReverseString {
        start = System.currentTimeMillis();
        sirakReverse(textToBeReversed,new StringBuilder());
        System.out.println("Sirak's Reverse Algo : " + (System.currentTimeMillis() - start)); 
-       
-    }
-    
-    public static String randomString(int length, String alphabet){
-    
-        Random random = new Random();
-        int alphabetLength = alphabet.length();
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < length; i++) {
-            stringBuilder.append(alphabet.charAt(random.nextInt(alphabetLength)));
-        }
-        return stringBuilder.toString();
     }
 }

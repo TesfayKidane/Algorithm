@@ -13,9 +13,9 @@ import java.util.Stack;
  *
  * @author Tesfay
  */
-public class ReverseArray{
+public class StackReverseArray{
     
-    public static <E> void reverse(E[] e){
+    public static <E> void stackReverseArray(E[] e){
        Stack<E> buffer = new ArrayStack<>(e.length);
        
        for(int i = 0; i < e.length ; i++){
@@ -29,7 +29,7 @@ public class ReverseArray{
     
     public static void main(String[] args){
         Integer[] ints = new Integer[]{1,2,3,4,5};
-        reverse(ints);
+        stackReverseArray(ints);
         Arrays.asList(ints).stream().forEach((t) -> System.out.print(t+", "));
     }
 }

@@ -4,13 +4,14 @@
 package algorithm.fibonacci;
 
 /**
- *
+ *Fibonacci numbers have always been interesting since ancient times. The initial puzzle that Fibonacci posed was: 
+ *how many pairs of rabbits will there be in one year if all of them can mate with each other.
  * @author Tesfay
  */
 public class Fibonacci {
 
     // computes in O(pow(2,n)) time
-    public static int fibonacciBad(int n) {
+    public static long fibonacciBad(int n) {
         return n <= 1 ? n : fibonacciBad(n - 1) + fibonacciBad(n - 2);
     }
 
@@ -26,7 +27,7 @@ public class Fibonacci {
         }
     }
     // computes in O(n) time
-    public static int findFibonacci(int n) {
+    public static long findFibonacci(int n) {
         if (n < 1) {
             return 0;
         }
@@ -46,10 +47,13 @@ public class Fibonacci {
     public static void main(String[] args) {
         int n = 10;
         long start = System.nanoTime();
-        System.out.println("fibonacciBad : " + fibonacciBad(n) + " time : " + (System.nanoTime() - start));
-        start = System.nanoTime();
+//        System.out.println("fibonacciBad : " + fibonacciBad(n) + " time : " + (System.nanoTime() - start));
+//        start = System.nanoTime();
         System.out.println("fibonacciGood : " + fibonacciGood(n)[0] + " time : " + (System.nanoTime() - start));
         start = System.nanoTime();
         System.out.println("findFibonacci : " + findFibonacci(n) + " time : " + (System.nanoTime() - start));
+        
+        start = System.nanoTime();
+        System.out.println("fibonacciMatrix : " + FibonacciMatrix.fibonacciMatrix(n) + " time : " + (System.nanoTime() - start));
     }
 }

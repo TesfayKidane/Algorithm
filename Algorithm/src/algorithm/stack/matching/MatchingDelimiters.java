@@ -14,11 +14,12 @@ import java.util.Stack;
  */
 public class MatchingDelimiters {
  
+    //asked by amazon
     public static boolean isMatched(String expression){
         
         String opening = "([{";
         String closing = ")]}";
-        Stack<Character> stack = new LinkedStack<Character>();
+        Stack<Character> stack = new LinkedStack<>();
         for(char c : expression.toCharArray()){
             if(opening.indexOf(c) != -1)
                 stack.push(c);

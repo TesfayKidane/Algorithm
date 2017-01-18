@@ -25,7 +25,7 @@ public class FibonacciTest {
         int[] actualFibSeq = new int[11];
         for(int i = 0 ; i <= 10 ; i++)
         {
-            actualFibSeq[i] = Fibonacci.fibonacci(i);
+            actualFibSeq[i] = Fibonacci.fibonacciBad(i);
         }
         
         assertArrayEquals(expectedFibSeq, actualFibSeq);        

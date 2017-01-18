@@ -5,7 +5,6 @@
  */
 
 import algorithm.recursion.BinarySearch;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -37,6 +36,6 @@ public class BinarySearchTest {
     @Test
     public void binarySearchTest(){
     
-        assertTrue(BinarySearch.binarySearch(ints, 9999, 0, 10000));
+        assertTrue(BinarySearch.binarySearchRecursive(ints, 9999, 0, 10000));
     }
 }

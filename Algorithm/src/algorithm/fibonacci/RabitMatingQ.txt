@@ -1,0 +1,10 @@
+Source : http://jwilson.coe.uga.edu/EMAT6680Fa11/Molnar/final3ram/final3ram.html
+Q : Fibonacci's rabbit mating problem. Say rabbits are able to mate at the age of one month, and pregnancy takes one month.
+ Thus, at the end of its second month, a female can produce another pair of rabbits. Rabbits never die, and a mating pair
+ always produces one new pair (one male, one female) every month from the second month on. The puzzle that Fibonacci posed was:
+ if we start with a new pair from birth, how many pairs will there be in one year?
+
+A : To solve Fibonacci's problem, we'll let f(n) be the number of pairs during month n. By convention, f(0) = 0. f(1) = 1 for 
+our new first pair. f(2) = 1 as well, as conception just occurred. The new pair is born at the end of month 2, so during month 3,
+ f(3) = 2. Only the initial pair produces offspring in month 3, so f(4) = 3. In month 4, the initial pair and the month 2 pair breed, so f(5) = 5.
+ We can proceed this way, presenting the results in a table. At the end of a year, Fibonacci has 144 pairs of rabbits.

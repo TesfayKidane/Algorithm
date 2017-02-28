@@ -14,7 +14,7 @@ import java.util.Random;
 public class RandomString {
 
     public static String randomString(int length) {
-       return randomString(length, "AaBbCcDdEeFfGgHhIiJjKkLlMmNnO oPpQqRrSsTtUuVvWwXxYyZz");
+       return randomString(length, "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz");
     }
 
     public static String randomString(int length, String alphabet) {

@@ -5,6 +5,9 @@
  */
 package myutils;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -17,5 +20,13 @@ public class Database {
     public static Integer[] getIntArrayData (int length){
         Integer[] ints = new Integer[length];
         return IntStream.range(0, length).boxed().collect(Collectors.toList()).toArray(ints);
+    }
+    
+     public static List<String> getStringArrayData (int total, int stringLength){
+         List<String> randomListOfStrings = new ArrayList<>();
+         for(int i = 0 ;  i < total; i++){
+             randomListOfStrings.add(RandomString.randomString(stringLength));
+         }
+         return randomListOfStrings;
     }
 }

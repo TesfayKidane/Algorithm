@@ -1,7 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+To measure the time complexity of the merge sort above, let i and j be the length of A1 and A2 respectively. 
+Inside the while loop each operation performed takes O(1) time. The algorithm is designed to copy one element
+from either A1 or A2 to A during each iteration in the while loop. After an element is copied to A it is not 
+visited any more. Therefor the while loop iterate a total of i + j times, which leads us to conclude the merge
+algorithm has a time complexity of O(i + j).
  */
 package algorithm.lab02.problem03;
 

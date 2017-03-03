@@ -21,14 +21,7 @@ public class Sort {
         
         // count how many times an element occor on the input array
         for(int i = 0 ; i < arr.length; i++){
-            if (arr[i] == 0)
-                elementCount[0]++;
-            else if(arr[i] == 1)
-                elementCount[1]++;
-            else if(arr[i] == 2)
-                elementCount[2]++;
-            else
-                return null;
+            elementCount[arr[i]]++;
         }
         // reconstruct array and return         
         for(int j = 0 ; j < arr.length; j++)

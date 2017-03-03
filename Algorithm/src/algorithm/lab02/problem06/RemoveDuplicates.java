@@ -47,13 +47,14 @@ public class RemoveDuplicates {
     
     public static void main(String[] args){
         
-        int MAX = 1000;
+        int MAX = 1000000;
         List<Integer> random = new ArrayList<>();
         for(int i = 0 ; i < MAX; i++)
         {
             Double r = Math.random()*MAX;
             random.add(r.intValue());
         }
+        
         RemoveDuplicates rd = new RemoveDuplicates();
         long start = System.nanoTime();
         rd.removeDups(random);

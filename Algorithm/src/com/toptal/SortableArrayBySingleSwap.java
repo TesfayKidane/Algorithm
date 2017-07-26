@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Check if an array of intergers is sortable in to a non-decreasing order by only one swap
+ele A = [1 , 5, 4, 3, 6] : this array can be sorted by only swapping 5 and 3.
  */
 package com.toptal;
 
@@ -9,11 +8,14 @@ package com.toptal;
  *
  * @author Tesfay
  */
-public class Solution {
+public class SortableArrayBySingleSwap {
     
     public static void main(String[] args) {
         int[] arr = new int[] {1,1,2,3,1,1};
         System.out.println(solution(arr));
+        
+        int[] arr2 = new int[]{1, 5, 4, 3, 6};
+        System.out.println(solution(arr2));
     }
     
     public static boolean solution(int[] A) {

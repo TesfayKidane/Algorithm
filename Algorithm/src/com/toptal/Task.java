@@ -5,7 +5,7 @@
  */
 package com.toptal;
 
-import static com.toptal.Solution.solution;
+import static com.toptal.SortableArrayBySingleSwap.solution;
 
 /**
  *

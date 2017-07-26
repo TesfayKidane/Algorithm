@@ -32,5 +32,4 @@ public class MonkeyJump {
         }
         return jump;
     }
-    
 }

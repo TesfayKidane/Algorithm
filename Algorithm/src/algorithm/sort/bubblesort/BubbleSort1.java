@@ -13,48 +13,35 @@ only for the best case but also for the 2nd best, 3rd best etc. Out of curiosity
 and modified BubbleSort algorithms on the worst case by feeding them an array sorted in descending order: the 
 original algorithm performed slightly better because the modified algorithm has some extra operations. 
  */
-package algorithm.lab03.problem05.sort_environment.sortroutines;
-
-import algorithm.lab03.problem05.sort_environment.runtime.Sorter;
+package algorithm.sort.bubblesort;
 
 /**
  *
  * @author Tesfay
  */
-public class BubbleSort1 extends Sorter {
+public class BubbleSort1 {
 
-    int[] arr;
-
-    public int[] sort(int[] array) {
-        this.arr = array;
-        bubbleSort1();
-        return arr;
-
-    }
-
-    private void bubbleSort1() {
+    public void sort(Integer[] arr) {
         int len = arr.length;
         for (int i = 0; i < len; i++) {
             boolean sorted = true;
             for (int j = 0; j < len - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    swap(j, j + 1);
+                    swap(arr, j, j + 1);
                     sorted = false;
                 }
-            }
-
+            }            
+            
             // if no swap happend on the first iteration of the number, it means they are sorted.
-            if (sorted) {
+            if (sorted){
                 break;
             }
         }
-    }
+    } 
 
-    int[] swap(int i, int j) {
+    public void swap(Integer[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-        return arr;
-
     }
 }

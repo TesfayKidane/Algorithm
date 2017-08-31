@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import algorithm.lfucache.LFUCache;
+import leetcode.lfucache.LFUCache;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.junit.Test;

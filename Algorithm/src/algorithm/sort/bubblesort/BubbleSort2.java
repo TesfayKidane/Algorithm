@@ -9,42 +9,29 @@ improved the running time in this way. Call your new Java file, which
 contains the improvements from this problem and the previous problem,
 BubbleSort2.java.
  */
-package algorithm.lab03.problem05.sort_environment.sortroutines;
-
-import algorithm.lab03.problem05.sort_environment.runtime.Sorter;
+package algorithm.sort.bubblesort;
 
 /**
  *
  * @author Tesfay
  */
-public class BubbleSort2 extends Sorter{
-
-    int[] arr;
-
-    public int[] sort(int[] array) {
-        this.arr = array;
-        bubbleSort2();
-        return arr;
-
-    }
-
-    private void bubbleSort2() {
+public class BubbleSort2 {
+         
+   public void sort(Integer[] arr){    
         int len = arr.length;
-        for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    swap(j, j + 1);
+        for(int i = 0 ; i < len ; i++){
+            for(int j = 0 ; j < len - i - 1; j++){
+                if(arr[j] > arr[j+1])
+                {
+                    swap(arr, j, j+1);
                 }
             }
         }
-    }
-
-    int[] swap(int i, int j) {
+    }    
+   public void swap(Integer[] arr, int i, int j){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-        return arr;
-
     }
-
+    
 }

@@ -55,6 +55,7 @@ public class AgeListSortTest {
     public void testAgeListSort2(){
         List<Integer> expectedSortedAges = new ArrayList<>(ages);
         Collections.sort(expectedSortedAges);
+        
         List<Integer> actualSotedAges = ageListSort.sortAgeList2(ages);
         assertArrayEquals(expectedSortedAges.toArray(), actualSotedAges.toArray()); 
     }

@@ -44,7 +44,7 @@ public class DetectCycleInGraphDFS {
         if(!visited[v]){
                 visited[v] = true;
                 recursionStack[v] = true;
-                // check if any of the adjucent nodes create cycle
+                // check if any of the adjacent nodes create cycle
                 Iterator<Integer> iterator = adj[v].listIterator();
                 while(iterator.hasNext()){
                     int next = iterator.next();

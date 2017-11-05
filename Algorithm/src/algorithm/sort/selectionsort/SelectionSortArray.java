@@ -4,7 +4,6 @@ package algorithm.sort.selectionsort;
 public class SelectionSortArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] a = new int[]{4,2,5,6};
 		
 		for(int i = 0 ; i < a.length; i++) System.out.print(" " + a[i]);
@@ -25,14 +24,12 @@ public class SelectionSortArray {
 	}
 
 	private void swap(int[] s, int i, int minPos) {
-		// TODO Auto-generated method stub
 		int temp = s[i];
 		s[i] = s[minPos];
 		s[minPos] = temp;
 	}
 
 	private int getMinPosition(int[] a, int bottom, int end) {
-		// TODO Auto-generated method stub
 		int min = a[bottom];
 		int minPosition = bottom;
 

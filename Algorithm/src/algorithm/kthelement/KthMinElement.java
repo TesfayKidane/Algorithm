@@ -4,7 +4,6 @@ package algorithm.kthelement;
 public class KthMinElement {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		KthMinElement kthMaxEle = new KthMinElement();
 		int[] a = new int[] { 3, 5, 4, 6};// 0, 7, 9, 2, 8, 1 };
 		

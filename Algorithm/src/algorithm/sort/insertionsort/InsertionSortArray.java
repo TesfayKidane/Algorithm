@@ -4,7 +4,6 @@ package algorithm.sort.insertionsort;
 public class InsertionSortArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] a = new int[] { 5, 0, 2, 6, 1 };
 
 		InsertionSortArray is = new InsertionSortArray();

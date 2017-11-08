@@ -1,8 +1,8 @@
-package graph;
+package graph.kurskalmst;
 
 import java.util.Arrays;
 
-public class KruskalMST {
+public class Graph {
 
     // class to represent the edge between nodes
     class Edge implements Comparable<Edge>{
@@ -24,7 +24,7 @@ public class KruskalMST {
     Edge[] edges;
 
     // create graph with vertex numVertexs and edge numEdges
-    public KruskalMST(int numVertexs, int numEdges) {
+    public Graph(int numVertexs, int numEdges) {
         this.numVertexs = numVertexs;
         this.numEdge = numEdges;
         edges = new Edge[numEdges];
@@ -123,7 +123,7 @@ public class KruskalMST {
                 4       */
         int V = 4;  // Number of vertices in graph
         int E = 5;  // Number of edges in graph
-        KruskalMST graph = new KruskalMST(V, E);
+        Graph graph = new Graph(V, E);
 
         // add edge 0-1
         graph.edges[0].src = 0;

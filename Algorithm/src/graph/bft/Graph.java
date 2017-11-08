@@ -4,7 +4,7 @@
  * and open the template in the editor.
  * Source : http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/
  */
-package graph;
+package graph.bft;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -13,12 +13,12 @@ import java.util.LinkedList;
  *
  * @author Tesfay
  */
-public class BFTBasic {
+public class Graph {
     
     int numVertex; 
     LinkedList<Integer> adj[]; // list of adjuscent nodes for each vertex
     
-    public BFTBasic(int numVertex){
+    public Graph(int numVertex){
         this.numVertex = numVertex;        
         this.adj = new LinkedList[numVertex];
         
@@ -68,7 +68,7 @@ public class BFTBasic {
     
     public static void main(String[] args){
     
-        BFTBasic g = new BFTBasic(4);
+        Graph g = new Graph(4);
         
         g.addEdge(0, 1);
         g.addEdge(0, 2);

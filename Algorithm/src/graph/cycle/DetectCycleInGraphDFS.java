@@ -4,7 +4,7 @@
  * and open the template in the editor.
  * Source (C++) : http://www.geeksforgeeks.org/detect-cycle-in-a-graph/
  */
-package graph;
+package graph.cycle;
 
 import java.util.Iterator;
 import java.util.LinkedList;

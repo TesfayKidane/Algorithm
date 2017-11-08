@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graph;
+package graph.dft;
 
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 
@@ -13,12 +12,12 @@ import java.util.LinkedList;
  *
  * @author Tesfay
  */
-public class DFSBasic {
+public class Graph {
     
     int numVertex;
     LinkedList<Integer> adj[] ;
     
-    public DFSBasic(int numVertex){
+    public Graph(int numVertex){
         this.numVertex = numVertex;
         adj = new LinkedList[numVertex];
         
@@ -59,7 +58,7 @@ public class DFSBasic {
     
     public static void main(String[] args){
     
-        DFSBasic g = new DFSBasic(4);
+        Graph g = new Graph(4);
         
         g.addEdge(0, 1);
         g.addEdge(0, 2);

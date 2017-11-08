@@ -4,17 +4,17 @@
  * and open the template in the editor.
  * source : http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
  */
-package graph;
+package graph.dijkstraspt;
 
 /**
  *
  * @author Tesfay
  */
-public class DijkstraSPT {
+public class Graph {
 
     public int numVertex;
 
-    public DijkstraSPT(int numVertex) {
+    public Graph(int numVertex) {
         this.numVertex = numVertex;
     }
 
@@ -98,7 +98,7 @@ public class DijkstraSPT {
         {8, 11, 0, 0, 0, 0, 1, 0, 7},
         {0, 0, 2, 0, 0, 0, 6, 7, 0}
         };
-        DijkstraSPT dSpt = new DijkstraSPT(graph.length);
+        Graph dSpt = new Graph(graph.length);
         dSpt.dijkstraSpt(graph, 0);
     }
 }

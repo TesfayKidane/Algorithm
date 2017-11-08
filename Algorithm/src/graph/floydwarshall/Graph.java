@@ -4,13 +4,13 @@
  * and open the template in the editor.
  * source : http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/
  */
-package graph;
+package graph.floydwarshall;
 
 /**
  *
  * @author Tesfay
  */
-public class AllPairShortestPath {
+public class Graph {
     
     public static final int INFINITE  = Integer.MAX_VALUE;
     
@@ -69,7 +69,7 @@ public class AllPairShortestPath {
                           {INFINITE, INFINITE, 0,   1},
                           {INFINITE, INFINITE, INFINITE, 0}
                         };
-        AllPairShortestPath a = new AllPairShortestPath();
+        Graph a = new Graph();
  
         // Print the solution
         a.floydWarshall(graph,graph.length);

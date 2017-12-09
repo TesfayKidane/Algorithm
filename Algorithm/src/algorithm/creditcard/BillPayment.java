@@ -71,7 +71,7 @@ public class BillPayment {
         bills.add(new Bill(1237, 15, "D", "D1"));
         
         payments.add(new Payment(1234, 12, "A"));
-        payments.add(new Payment(1234, 10, "B"));
+        payments.add(new Payment(1235, 10, "B"));
         payments.add(new Payment(1236, 14, "C"));
         payments.add(new Payment(1237, 10, "D"));       
         
